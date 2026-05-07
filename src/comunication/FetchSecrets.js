@@ -81,6 +81,7 @@ export const getSecretsforUser = async (loginValues) => {
     return await response.json();
 };
 
+
 export const getAllSecrets = async () => {
     const API_URL = getApiUrl();
     const response = await fetch(`${API_URL}/secrets`, {
