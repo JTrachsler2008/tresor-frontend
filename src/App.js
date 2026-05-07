@@ -9,6 +9,7 @@ import Users from './pages/user/Users';
 import LoginUser from "./pages/user/LoginUser";
 import RegisterUser from "./pages/user/RegisterUser";
 import EditUser from "./pages/user/EditUser";
+import AddUser from "./pages/user/AddUser";
 import Secrets from "./pages/secret/Secrets";
 import NewCredential from "./pages/secret/NewCredential";
 import NewCreditCard from "./pages/secret/NewCreditCard";
@@ -35,6 +36,7 @@ function App() {
                     <Route path="/user/login" element={<LoginUser loginValues={loginValues} setLoginValues={setLoginValues}/>}/>
                     <Route path="/user/register" element={<RegisterUser loginValues={loginValues} setLoginValues={setLoginValues}/>}/>
                     <Route path="/user/edit/:id" element={<EditUser loginValues={loginValues}/>}/>
+                    <Route path="/user/add" element={<AddUser loginValues={loginValues}/>}/>
                     <Route path="/secret/secrets" element={<Secrets loginValues={loginValues}/>}/>
                     <Route path="/secret/newcredential" element={<NewCredential loginValues={loginValues}/>}/>
                     <Route path="/secret/newcreditcard" element={<NewCreditCard loginValues={loginValues}/>}/>
@@ -47,4 +49,4 @@ function App() {
     );
 }
 
-export default App;// navbar 
+export default App;
